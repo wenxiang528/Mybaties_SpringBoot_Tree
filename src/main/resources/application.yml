@@ -1,0 +1,27 @@
+
+
+
+server:
+  port: 8080
+  #数据库连接池
+spring:
+  datasource:
+    url: jdbc:mysql:///test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+
+#mybatis的相关配置
+mybatis:
+
+  #mapper-locations是mapper的xml文件位置
+  mapper-locations: classpath:mapper/*/*.xml
+
+  #type-aliases-package是为了配置xml文件中resultType返回值的包位置
+  type-aliases-package: com.demo.entity
+
+  #开启驼峰命名
+  configuration:
+    map-underscore-to-camel-case: true

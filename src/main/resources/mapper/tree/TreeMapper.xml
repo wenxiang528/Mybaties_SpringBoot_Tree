@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.demo.mapper.TreeMapper">
+
+<select id="findAll" resultType="com.demo.entity.Tree">
+ select  * from fitmentTree
+</select>
+
+ <select id="selectTree" resultType="com.demo.entity.FitmentTree">
+ select  * from fitmentTree
+</select>
+
+
+</mapper>
